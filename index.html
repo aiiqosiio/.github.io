@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>남은 일수 계산기</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>남은 일수 계산기</h1>
+        <label for="currentLevel">현재 레벨:</label>
+        <input type="number" id="currentLevel" required>
+
+        <label for="currentExperience">현재 경험치:</label>
+        <input type="number" id="currentExperience" required>
+
+        <label for="dailyCharge">일일 충전:</label>
+        <input type="number" id="dailyCharge" required>
+
+        <button onclick="calculateDays()">계산하기</button>
+
+        <h2 id="result"></h2>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
